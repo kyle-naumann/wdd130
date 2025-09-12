@@ -30,7 +30,7 @@ main img {
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(0, 0, 0);
 }
 
 aside {
@@ -39,11 +39,11 @@ aside {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
-    color: aqua;
+    color: rgb(81, 121, 174);
 }
 
 aside img {
-    max-width: 150px;
+    width: 200px;
     height: auto;
 }
 
