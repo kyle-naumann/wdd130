@@ -1,11 +1,36 @@
+nav {
+    background-color: #8d8d8d;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
 main {
     width: 600px;
     margin: 0 auto;
+    max-width: 90%;
 }
 
 main img {
     max-width: 150px;
     height: auto;
+    border: #8d8d8d solid 2px;
+    padding: 5px;
+    box-shadow: #8d8d8d 2px 2px 5px;
+}
+
+h1 {
+    color: darkblue;
 }
 
 aside {
