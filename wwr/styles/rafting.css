@@ -12,20 +12,21 @@ body {
     color: var(--accent-color);
 }
 header, main, footer {
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
-.socialmedia a {text-decoration: none;
-    max-width: 30
-    px;
+.socialmedia a {
+    text-decoration: none;
 }
 
 .hero img {
@@ -34,4 +35,38 @@ nav, p, section, article {
     height: auto;
 }
 
+h1 {
+    position: absolute;
+    top: 245px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: lightgray;
+    color: #000000;
+}
 
+.hero article {
+    position: absolute;
+    top: 100%;
+    left : 6.5%;
+    background: lightgray;
+    border-radius: 8px;
+    opacity: .70;
+    color: #222;
+    padding: 2rem;
+    max-width: 85%;
+}
+.hero article img {
+    float: right;
+    width: 200px;
+    height: auto;
+}
+
+section {
+    margin: 32px;
+    padding: 16px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: lightgray
+}
