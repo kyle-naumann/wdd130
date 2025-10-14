@@ -1,16 +1,25 @@
-*{
+/* Define CSS custom properties at the root level */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #34495e;
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Arial', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
-}
-body {
     font-family: var(--body-font);
     color: var(--accent-color);
 }
+
 header, main, footer {
     width: 100%;
     margin: 0 auto;
@@ -21,21 +30,27 @@ h1, h2 {
     color: var(--primary-color);
     text-align: center;
 }
+
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
+
 .socialmedia a {
     text-decoration: none;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero img {
-    display : block;
+    display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 245px;
     width: 100%;
@@ -49,7 +64,7 @@ h1 {
 .hero article {
     position: absolute;
     top: 100%;
-    left : 6.5%;
+    left: 6.5%;
     background: lightgray;
     border-radius: 8px;
     opacity: .70;
@@ -57,6 +72,7 @@ h1 {
     padding: 2rem;
     max-width: 85%;
 }
+
 .hero article img {
     float: right;
     width: 200px;
@@ -68,5 +84,5 @@ section {
     padding: 16px;
     font-size: 1.2rem;
     border-radius: 8px;
-    background-color: lightgray
+    background-color: lightgray;
 }
