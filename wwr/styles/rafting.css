@@ -443,3 +443,269 @@ footer p {
     line-height: 1.6;
     margin: 0;
 }
+
+/* Contact Page Styles */
+
+/* Main heading for contact page */
+main h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 3rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 15px;
+}
+
+/* Company Information Section */
+.company-info {
+    margin: 60px auto;
+    max-width: 1000px;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.company-info h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-details h3 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item strong {
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: var(--accent-color);
+    line-height: 1.5;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
+    margin: 60px 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.employee-profiles h2 {
+    margin-bottom: 40px;
+    margin-top: 25px;
+    color: var(--primary-color);
+}
+
+.employees-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.employee {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.employee:hover {
+    transform: translateY(-5px);
+}
+
+.employee img {
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.employee h3 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+
+.employee p {
+    color: var(--accent-color);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    margin: 60px 40px;
+    background-color: #eaeaea;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group fieldset {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0;
+}
+
+.form-group legend {
+    font-weight: bold;
+    color: var(--accent-color);
+    padding: 0 10px;
+}
+
+.radio-group {
+    margin: 0px;
+    display: inline-flex;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+    width: auto;
+}
+
+.radio-group label {
+    display: inline;
+    font-weight: normal;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.submit-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for contact page */
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
