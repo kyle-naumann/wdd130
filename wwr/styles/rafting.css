@@ -84,7 +84,7 @@ nav, p, section, article {
 
 .hero h1 {
     position: absolute;
-    top: 50px;
+    top: 100px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -95,7 +95,7 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
-    top: 70%;
+    top: 74%;
     left: 6.5%;
     background: lightgray;
     border-radius: 8px;
@@ -337,7 +337,7 @@ footer p {
 }
 
 .newsletter-form button {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     padding: 15px 30px;
     border: none;
@@ -348,12 +348,12 @@ footer p {
 }
 
 .newsletter-form button:hover {
-    background-color: #2980b9;
+    background-color: var(--secondary-color);
 }
 
 /* Call to Action Section */
 .cta {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--primary-color);
     color: white;
     text-align: center;
     padding: 80px 40px;
