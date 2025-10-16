@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <meta name="description" content="Test your knowledge of HTML and CSS with this interactive quiz">
+    <meta name="author" content="Kyle Naumann">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>HTML & CSS Knowledge Quiz</h1>
+
+        <form action="#" method="post">
+            <!-- Question 1: Text Input (Fill in the blank) -->
+            <div class="question">
+                <label for="q1">1. What does HTML stand for? (Fill in the blank)</label>
+                <input type="text" name="q1" id="q1" placeholder="Enter your answer here...">
+            </div>
+
+            <!-- Question 2:  (Short answer) -->
+            <div class="question">
+                <label for="q2">2. Explain the difference between CSS classes and IDs. Provide a brief explanation with examples.</label>
+                <textarea name="q2" id="q2" placeholder="Write your answer here..."></textarea>
+            </div>
+
+            <!-- Question 3: Select dropdown -->
+            <div class="question">
+                <label for="q3">3. Which CSS property is used to change the background color of an element?</label>
+                <select name="q3" id="q3">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="background-color">background-color</option>
+                    <option value="color">color</option>
+                    <option value="bg-color">bg-color</option>
+                    <option value="background">background</option>
+                </select>
+            </div>
+
+            <!-- Question 4: Number input -->
+            <div class="question">
+                <label for="q4">4. How many heading levels (h1, h2, h3, etc.) are available in HTML? (Enter a number)</label>
+                <input type="number" name="q4" id="q4" min="1" max="10" placeholder="Enter a number">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-container">
+                <button type="submit">Submit Quiz</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
